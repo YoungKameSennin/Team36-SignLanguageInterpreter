@@ -1,13 +1,26 @@
 <!DOCTYPE html>
 <html>
-<body>
+<head>
+  <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles.css') }}">
+  <script src="static/main.js" defer></script>
+</head>
 
-<h2>Welcome to American Sign language Interpreter</h2>
-<form action="/upload" method="post" enctype="multipart/form-data">
+<header>
+  <h1>American Sign language Interpreter</h1>
+</header>
+
+<body>
+  <h2 id="result">choose file to upload</h2>
+  <button type="button" onClick="chooseImage()">Choose Image</button>
+  <input type="file" id="fileInput" style="display: none;" onchange="handleFileSelect(event)">
+  <img id="imageElement" src="" alt="Selected Image">
+  <button id="upload" onClick="uploadImage()" type="button">Upload</button>
+
+<!-- <form action="/upload" method="post" enctype="multipart/form-data">
   Select image to upload:
   <input type="file" name="file" id="file">
   <input type="submit" value="Upload Image" name="submit">
-</form>
+</form> -->
 
 </body>
 </html>

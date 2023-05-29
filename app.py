@@ -40,13 +40,13 @@ def home():
 def upload_file():
 
     if 'file' not in request.files:
-        return 'No file part'
+        return 'No file part', 404
     f = request.files['file']
 
     # If the user does not select a file, the browser may
     # submit an empty file without a filename.
     if f.filename == '':
-        return 'No selected file'
+        return 'No selected file', 404
     
     filename = secure_filename(f.filename)
     filepath = os.path.join('./upload_file', filename)
@@ -63,7 +63,8 @@ def upload_file():
     # Delete the saved image after it's encoded to base64
     os.remove(filepath)
 
-    return render_template('result.html', result = output, image_data = encoded_string)
+    # return render_template('result.html', result = output, image_data = encoded_string)
+    return output
 
 if __name__ == '__main__':
     app.run(host='localhost', port=9999)
