@@ -7,4 +7,4 @@ Following are steps: <br>
 2.Run app.py on terminal.<br>
 3.Open a browser, use localhost:9999 to obtain the html interface.<br>
 4.Follow the instructions on web and upload a picture.<br>
-5.Our model will predict the result.<br>
+5.Our model will predict the result and store the uploaded picture in upload_file folder.<br>
