@@ -11,6 +11,11 @@ body {
     font-family: sans-serif;
 }
 
+img {
+    width: 400px;
+    height: 400px;
+}
+
 button {
     border-radius: 10px;
     background-color: aquamarine;
