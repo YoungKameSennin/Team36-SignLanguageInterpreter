@@ -61,7 +61,7 @@ def upload_file():
         encoded_string = base64.b64encode(img_file.read()).decode('utf-8')
 
     # Delete the saved image after it's encoded to base64
-    os.remove(filepath)
+    #os.remove(filepath)
 
     # return render_template('result.html', result = output, image_data = encoded_string)
     return output
