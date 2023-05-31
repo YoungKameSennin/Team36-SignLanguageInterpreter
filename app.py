@@ -48,8 +48,11 @@ def upload_file():
     if f.filename == '':
         return 'No selected file', 404
     
+    cwd = os.getcwd()
+    cwd = cwd + '/upload_file' 
+    
     filename = secure_filename(f.filename)
-    filepath = os.path.join('./upload_file', filename)
+    filepath = os.path.join(cwd, filename)
     f.save(filepath)
 
     output = predict_image(filepath)
