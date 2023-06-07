@@ -18,6 +18,10 @@ In order to run this frontend on your end, you need to at least install tensorfl
 Interpret the dataset by obtaining number of members in each classes and showing simple demo of our dataset. <br>
 ### interpreter.ipynb:
 Define model achitectures, train model, predict model and compares accuracies and losses, indicating accuracy growth each epoch.
+### app.py:
+Using flask to connect our UI to localhost:9999
+### example.jpg
+It is an example input for our model, upload it to see how it is predicted!
 ### static:
 A folder contains .js .css files. These files define the style of our frontend
 ### upload_file:
