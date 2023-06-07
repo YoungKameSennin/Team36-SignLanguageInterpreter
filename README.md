@@ -6,11 +6,12 @@ In order to run this frontend on your end, you need to at least install tensorfl
 
 
 ## Instruction on running the model:
-1.Run interpreter.ipynb once, obtain sign_language_model.h5 file in the same directory. ($ python interpreter.py)<br>
+1.Run interpreter.ipynb once, obtain sign_language_model.h5 file in the same directory. (click "Run All" in jupyter)<br>
 2.Run app.py on terminal. ($ python app.py)<br>
 3.Open a browser, type localhost:9999 in the url bar to obtain the html interface.<br>
 4.Follow the instructions on web and upload a picture. <br>
 5.Our model will predict the result on the screen and store the uploaded picture in upload_file folder.<br>
+6.Remember to terminate app.py by typing ctrl+c in the terminal.
 
 
 ## Files:
